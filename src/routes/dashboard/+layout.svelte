@@ -1,15 +1,17 @@
+<script>
+  import IconSideBar from "$lib/commun/sidebar/IconSideBar.svelte";
+
+</script>
 
 <main class="active">
     <aside>
-        <div>
-            <p>Lateral</p>
-        </div>   
+       <IconSideBar />
     </aside>
     <header><h1>Dasboard Layout</h1></header>
     <section>
         <slot />
     </section>
-    
+    <footer></footer>
 </main>
 
 
@@ -17,7 +19,7 @@
     main{
         
         display: grid;
-        gap:2px;
+        gap:1px;
         grid-template-areas: 
         "aside header header"
         "aside section section"
@@ -44,16 +46,16 @@
         height: 60px;
     }
     aside{
-        width: 90px;
+        width: 88px;
         grid-area: aside;
         background: var(--md-ref-palette-primary30);
         color: #eee;
         transition: all ease-out .5s;
        
     }
-    aside:hover{
+    /* aside.active{
         width: 280px;
-    }
+    } */
     section{
         grid-area: section;
         background: var(--md-ref-palette-neutral-variant80) ;

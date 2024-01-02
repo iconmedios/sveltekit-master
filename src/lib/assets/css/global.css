@@ -9,7 +9,8 @@ body{
     font-family: sans-serif;
     padding: 0;
     margin: 0;
-    font-weight:400;
+    font-size: 16px;
+
     
 }
 
@@ -19,6 +20,10 @@ a{
 }   
 .active{
   color: var(--link-active-color);
+}
+ul{
+  padding: 0;
+  margin: 0; 
 }
 .error{
   color: var(--error);
@@ -45,4 +50,44 @@ a{
 .icb{
   align-items: center;
 	justify-content: space-between;
+}
+
+   
+ul.nav-side-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding:4px;
+ 
+}
+
+ul.nav-side-bar li a{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background: #11111140;
+ height: 80px;
+ font-size: .8em;
+  color: #EEEEEE90 ; 
+}
+
+ul.nav-side-bar li a:hover{
+  background: #11111160;
+  color: #EEEEEE ; 
+}
+
+ul.nav-side-bar li ul{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 88px;
+  list-style: none;
+  width: 200px;
+  background: gainsboro;
+  height: 100vh;
+  color: black;
+}
+ul.nav-side-bar li:hover ul{
+  display: flex;
 }
