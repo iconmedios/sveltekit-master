@@ -1,0 +1,13 @@
+<script>
+    import "$lib/assets/css/normalize.css"
+    import "$lib/assets/css/global.css"
+</script>
+
+<svelte:head>
+	<title>Title</title>
+</svelte:head>
+
+<slot/>
+
+
+

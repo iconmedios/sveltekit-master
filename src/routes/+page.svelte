@@ -1,26 +1,15 @@
 <script>
     import { AirplayIcon, AtSignIcon} from 'svelte-feather-icons'
-    import Tareas from "$lib/tareas/c03_TareasFirebase.svelte"
+    import Header from "$lib/commun/header/PublicHeader.svelte"
 </script>
 
-<h1><span class="iconcolor"><AirplayIcon size="50"/></span>Creando Tareas</h1>
+        <Header />
 
+<div class="container">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsum molestiae recusandae porro minima saepe? Culpa et quod debitis temporibus incidunt ab dignissimos laudantium veritatis quasi totam. Ut, pariatur explicabo! </p>
 
-<Tareas />
+  
+</div>
 
+  
 
-<style>
-    h1{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        color:green;
-    }
-    span{
-        display: inline-block;
-        color:green;
-        border: 2px solid green;
-        padding:16px;
-        border-radius: 50%;
-    }
-</style>    

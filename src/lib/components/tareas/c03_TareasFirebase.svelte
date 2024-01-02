@@ -3,7 +3,7 @@
 
     import { initializeApp, getApps, getApp } from "firebase/app";
     import { collection,  onSnapshot, getFirestore, QuerySnapshot, doc, updateDoc, deleteDoc , addDoc} from "firebase/firestore";
-    import { firebaseConfig } from "$lib/firebase";
+    import { firebaseConfig } from "$lib/data/firebase";
 
     const firebaseApp = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
 
@@ -69,9 +69,11 @@
 <a href="/tareas">Tareas Base</a>
 <hr />
 <br />
-
+<div>
 <input type="text" placeholder="Agregar Tarea" bind:value={accion} />
 <button on:click={agregarTarea}>Agregar</button>
+</div>
+
 <ul>
     {#each tareas as tarea}
         <li class:terminada={tarea.realizada}>

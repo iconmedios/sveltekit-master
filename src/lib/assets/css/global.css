@@ -1,0 +1,48 @@
+@import url(theme/tokens.css);
+html{
+scroll-behavior: smooth;
+  font-size:18px;
+}
+
+body{
+    color: var(--md-ref-palette-neutral-variant40);
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    font-weight:400;
+    
+}
+
+a{
+ color:var(--link-color);
+ text-decoration: none;
+}   
+.active{
+  color: var(--link-active-color);
+}
+.error{
+  color: var(--error);
+}
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.h-full-cc{
+
+		display: flex;
+		flex-direction: column;
+		height: 100vh;  
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+}
+.icc{
+  align-items: center;
+	justify-content: center;
+}
+.icb{
+  align-items: center;
+	justify-content: space-between;
+}
