@@ -1,5 +1,5 @@
 <script>
-    import "$lib/assets/css/normalize.css"
+    import "$lib/assets/css/reset.css"
     import "$lib/assets/css/global.css"
 </script>
 
@@ -7,7 +7,7 @@
 	<title>Title</title>
 </svelte:head>
 
-<slot/>
+<slot/> 
 
 
 

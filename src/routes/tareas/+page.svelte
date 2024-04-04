@@ -1,7 +1,7 @@
 <script>
     import { AirplayIcon, AtSignIcon} from 'svelte-feather-icons'
     import Header from "$lib/commun/header/PublicHeader.svelte"
-    import Tareas from "$lib/components/tareas/c03_TareasFirebase.svelte"
+    import Tareas from "$lib/components/tareas/TareasFirebase.svelte"
 </script>
 <Header />
 

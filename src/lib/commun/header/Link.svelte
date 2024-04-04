@@ -6,3 +6,9 @@
 <a href={route} class:active={$page.url.pathname == route} class="nav-link" aria-current="page" >
     <slot/>
 </a>
+
+<style>
+    a{
+        color:darkgreen;
+    }
+</style>
